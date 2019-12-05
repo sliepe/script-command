@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "module": "commonjs"
+  },
+  "include": [
+    "test-command-execution.ts"
+  ]
+}

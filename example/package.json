@@ -1,0 +1,25 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "target/commonjs/test.js",
+  "scripts": {
+    "build:source": "script-command build:source amd ++ commonjs",
+    "watch:source": "script-command watch:source amd + commonjs"
+  },
+  "commands": {
+    "build": {
+      "source": "real-spawn tsc --project tsconfig.<format/>.json --listEmittedFiles --pretty"
+    },
+    "watch": {
+      "source": "real-spawn tsc --project tsconfig.<format/>.json --listEmittedFiles --pretty --watch"
+    }
+  },
+  "author": "Sebastian Liepe",
+  "license": "MIT",
+  "devDependencies": {
+    "real-spawn": "^1.0.3",
+    "script-command": "file:..",
+    "typescript": "^3.7.3"
+  }
+}

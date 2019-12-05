@@ -1,0 +1,38 @@
+{
+  "name": "script-command",
+  "version": "1.0.0",
+  "description": "Simply invoke a predefined command (by name and arguments)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "tsc --watch"
+  },
+  "bin": "./index.js",
+  "keywords": [
+    "script",
+    "scripts",
+    "command",
+    "commands",
+    "argument",
+    "arguments",
+    "parameter",
+    "parameters",
+    "variable",
+    "variables",
+    "placeholder",
+    "placeholders"
+  ],
+  "author": "Sebastian Liepe",
+  "dependencies": {
+    "command-path": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.14",
+    "typescript": "^3.7.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sliepe/script-command.git"
+  },
+  "license": "MIT"
+}
