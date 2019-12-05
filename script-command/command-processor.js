@@ -26,6 +26,11 @@ var CommandProcessor = /** @class */ (function () {
         if (command_path_1.default.isLocal(commandName)) {
             // Get local command path
             var localCommandPath = command_path_1.default.getLocal(commandName);
+            // If local path contains any whitespace
+            if (command_path_1.default.containsWhitespace(localCommandPath)) {
+                // Update with double quotes surrounded
+                localCommandPath = command_path_1.default.surroundWithDoubleQuotes(localCommandPath);
+            }
             var regExpCommandName = new RegExp(CommandProcessor.commandNamePattern);
             // Return Replaced command name with local command path
             return commandDefintion.replace(regExpCommandName, localCommandPath);

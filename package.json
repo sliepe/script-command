@@ -24,7 +24,7 @@
   ],
   "author": "Sebastian Liepe",
   "dependencies": {
-    "command-path": "^1.0.1"
+    "command-path": "^1.0.3"
   },
   "devDependencies": {
     "@types/node": "^12.12.14",

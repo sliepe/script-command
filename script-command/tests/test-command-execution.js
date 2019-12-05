@@ -16,3 +16,4 @@ childProcess.on('error', function (error) {
 childProcess.on('exit', function (code) {
     console.log("Process exited with code: " + code);
 });
+//# sourceMappingURL=test-command-execution.js.map

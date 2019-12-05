@@ -30,7 +30,13 @@ export default class CommandProcessor {
 
         if (CommandPath.isLocal(commandName)) {
             // Get local command path
-            const localCommandPath = CommandPath.getLocal(commandName);
+            let localCommandPath = CommandPath.getLocal(commandName);
+
+            // If local path contains any whitespace
+            if (CommandPath.containsWhitespace(localCommandPath)) {
+                // Update with double quotes surrounded
+                localCommandPath = CommandPath.surroundWithDoubleQuotes(localCommandPath);
+            }
 
             const regExpCommandName = new RegExp(CommandProcessor.commandNamePattern);
 
