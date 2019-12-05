@@ -1,6 +1,6 @@
 {
   "name": "script-command",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simply invoke a predefined command (by name and arguments)",
   "main": "index.js",
   "scripts": {
