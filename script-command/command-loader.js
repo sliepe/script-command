@@ -64,7 +64,7 @@ var CommandLoader = /** @class */ (function () {
                             }
                         }
                         else {
-                            throw new Error("Command part + " + commandPartKey + " not found!");
+                            throw new Error("Command part " + commandPartKey + " not found!");
                         }
                     }
                 }

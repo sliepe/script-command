@@ -67,7 +67,7 @@ export default class CommandLoader {
                                     object = commandPartValue;
                                 }
                             } else {
-                                throw new Error("Command part + " + commandPartKey + " not found!");
+                                throw new Error("Command part " + commandPartKey + " not found!");
                             }
                         }
                     } else {

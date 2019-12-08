@@ -10,7 +10,7 @@
   },
   "commands": {
     "build": {
-      "source": "real-spawn tsc --project tsconfig.<format/>.json --listEmittedFiles --pretty"
+      "source": "tsc --project tsconfig.<format/>.json --listEmittedFiles --pretty"
     },
     "watch": {
       "source": "real-spawn tsc --project tsconfig.<format/>.json --listEmittedFiles --pretty --watch"
